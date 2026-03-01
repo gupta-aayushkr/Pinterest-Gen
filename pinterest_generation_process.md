@@ -11,6 +11,11 @@ We brainstormed 5 highly shareable, visually engaging, and aesthetic infographic
 - The Hierarchy of Longevity Habits
 - The 24-Hour Cellular Repair Routine
 - 5 Physical Markers of True Biological Age
+- The 4 Pillars of Brain Longevity
+- Top 5 Adaptogens for Stress Resilience
+- How to Eat for Your Microbiome
+- The Science of Zone 2 Cardio for Longevity
+- Deep Sleep Blueprints: The Stages of Rest
 
 *Outputs:* Concepts were mapped out and saved to a local text file: `health_infographic_ideas.txt`.
 
