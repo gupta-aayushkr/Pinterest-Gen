@@ -35,14 +35,14 @@ After an initial attempt to push the assets to Google Drive was blocked because 
 To enable frictionless mass publishing directly via Pinterest's bulk uploader tool, a CSV map of the entire data structure was built linking the SEO metadata with the public content URLs.
 
 - Iterated the CSV multiple times to ensure 100% syntactical alignment with Pinterest's strict system requirements.
-- Generated and mapped specific descriptive text, outbound destination links (placeholders for the client website), and staggered 24-hour UTC `Publish date` delays (`2026-03-02T08:00:00`).
+- Generated and mapped staggered 24-hour UTC `Publish date` delays (`2026-03-02T08:00:00`).
 - Configured the required exact column headers formatting:
-    1. `Title`
+    1. `Title` (Crafted with rich, SEO-optimized keywords to rank highly in Pinterest search)
     2. `Media URL` (Direct string paths pointing back to the specific GitHub raw URLs layer)
     3. `Pinterest board` (Routed to a targeted `Health & Longevity` board)
     4. `Thumbnail` (Left blank per image format requirement)
-    5. `Description`
-    6. `Link`
+    5. `Description` (Crafted with rich, SEO-optimized explanations and long-tail keywords)
+    6. `Link` (Outbound destination link. Note: This is optional and there is no strict need for a link URL if you just want to publish the infographic natively)
     7. `Publish date`
     8. `Keywords` (Appended keyword arrays to boost search performance)
 
