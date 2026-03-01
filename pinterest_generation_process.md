@@ -35,7 +35,7 @@ After an initial attempt to push the assets to Google Drive was blocked because 
 To enable frictionless mass publishing directly via Pinterest's bulk uploader tool, a CSV map of the entire data structure was built linking the SEO metadata with the public content URLs.
 
 - Iterated the CSV multiple times to ensure 100% syntactical alignment with Pinterest's strict system requirements.
-- Generated and mapped staggered 24-hour UTC `Publish date` delays (`2026-03-02T08:00:00`).
+- Generated and mapped staggered 1-hour `Publish date` delays scheduled sequentially during the night of the same day (e.g., `2026-03-01T19:00:00`, `2026-03-01T20:00:00`, etc.).
 - Configured the required exact column headers formatting:
     1. `Title` (Crafted with rich, SEO-optimized keywords to rank highly in Pinterest search)
     2. `Media URL` (Direct string paths pointing back to the specific GitHub raw URLs layer)
