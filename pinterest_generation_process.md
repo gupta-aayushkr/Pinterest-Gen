@@ -47,3 +47,18 @@ To enable frictionless mass publishing directly via Pinterest's bulk uploader to
     8. `Keywords` (Appended keyword arrays to boost search performance)
 
 *Outputs:* Finalized and generated the `pinterest_bulk_upload.csv` directly into the project directory and synced the updated version to the remote GitHub repository.
+
+## 5. Pinterest Image Size & Visual Best Practices
+
+When generating or designing images for Pinterest, especially for infographic formats like the ones created in this project, it's critical to follow optimal sizing recommendations so the pins render correctly in users' feeds without essential information being cropped off.
+
+**Recommended Dimensions for Long Vertical Pins:**
+
+- **Standard Vertical (2:3 Aspect Ratio):** `1000 x 1500 pixels`. This is the most optimal and common ratio for Pinterest algorithms.
+- **Long Vertical / "Giraffe" Pins (1:2.1 Aspect Ratio):** `1000 x 2100 pixels`. This is considered a great size for infographics, recipes, and checklists as it commands extra scrolling screen real estate.
+- *Warning!* Pins taller than a `1:2.1` ratio (e.g., taller than 2100px) risk getting "truncated" (cropped off) right in the main Pinterest feed, requiring the user to tap them to see the bottom. This hurts click-through performance.
+
+**Designing for Impact:**
+
+- Put the most important headline and context right in the center or top-center of the image so if the image *does* get truncated on smaller mobile devices, the core hook remains visible.
+- Ensure all text overlays are large, bold, and easily readable on mobile.
