@@ -1,0 +1,49 @@
+# Pinterest Infographic Generation Process
+
+This document serves as a complete log of the entire automated workflow executed to generate, optimize, and stage a series of Pinterest infographic pins surrounding the themes of health and longevity.
+
+## 1. Ideation & Concept Generation
+
+We brainstormed 5 highly shareable, visually engaging, and aesthetic infographic ideas tailored for the Pinterest wellness and longevity space.
+
+- The Anatomy of a Centenarian's Plate
+- Lifespan vs. Healthspan: Squaring the Curve
+- The Hierarchy of Longevity Habits
+- The 24-Hour Cellular Repair Routine
+- 5 Physical Markers of True Biological Age
+
+*Outputs:* Concepts were mapped out and saved to a local text file: `health_infographic_ideas.txt`.
+
+## 2. Image Generation & Processing
+
+Based on the specific aesthetic and layout instructions requested during ideation, all 5 images were generated using an AI image generation tool.
+
+- Generated all raw images matching the designated prompts.
+- Created a local `images/` directory to neatly organize assets.
+- **SEO Optimization:** Stripped unnecessary container metadata from the image source files for cleaner size profiles and renamed all exported elements from numerical strings to SEO-optimized, hyphenated keyword descriptions (e.g., `5-physical-markers-of-true-biological-age-test.png`).
+
+## 3. Remote Hosting Strategy (Git Implementation)
+
+After an initial attempt to push the assets to Google Drive was blocked because the workspace browser was unauthenticated, we pivoted to an automatic programmatic fallback: **hosting the images on GitHub**.
+
+- Initialized a local `.git` repository in the project root.
+- Staged, committed, and pushed the new images and ideas text file to an existing linked GitHub origin (`gupta-aayushkr/Pinterest-Gen`).
+- This ensured all image files received highly-available, public URL access points through GitHub's raw content delivery network (`raw.githubusercontent.com/...`), which is fully compatible with Pinterest's bulk media ingester.
+
+## 4. Bulk Upload CSV Mapping
+
+To enable frictionless mass publishing directly via Pinterest's bulk uploader tool, a CSV map of the entire data structure was built linking the SEO metadata with the public content URLs.
+
+- Iterated the CSV multiple times to ensure 100% syntactical alignment with Pinterest's strict system requirements.
+- Generated and mapped specific descriptive text, outbound destination links (placeholders for the client website), and staggered 24-hour UTC `Publish date` delays (`2026-03-02T08:00:00`).
+- Configured the required exact column headers formatting:
+    1. `Title`
+    2. `Media URL` (Direct string paths pointing back to the specific GitHub raw URLs layer)
+    3. `Pinterest board` (Routed to a targeted `Health & Longevity` board)
+    4. `Thumbnail` (Left blank per image format requirement)
+    5. `Description`
+    6. `Link`
+    7. `Publish date`
+    8. `Keywords` (Appended keyword arrays to boost search performance)
+
+*Outputs:* Finalized and generated the `pinterest_bulk_upload.csv` directly into the project directory and synced the updated version to the remote GitHub repository.
