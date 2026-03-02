@@ -24,6 +24,7 @@ We brainstormed 5 highly shareable, visually engaging, and aesthetic infographic
 Based on the specific aesthetic and layout instructions requested during ideation, all 5 images were generated using an AI image generation tool.
 
 - Generated all raw images matching the designated prompts.
+- **Vertical Pin Formatting Validation:** Emphasized within the image generation AI prompts that the output must *natively* be a vertical portrait layout (2:3 aspect ratio), ensuring optimal Pinterest sizing directly out of the generation engine without relying on post-processing padding scripts.
 - Created a local `images/` directory to neatly organize assets.
 - **SEO Optimization:** Stripped unnecessary container metadata from the image source files for cleaner size profiles and renamed all exported elements from numerical strings to SEO-optimized, hyphenated keyword descriptions (e.g., `5-physical-markers-of-true-biological-age-test.png`).
 
