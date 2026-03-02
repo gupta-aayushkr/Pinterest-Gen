@@ -47,7 +47,7 @@ To enable frictionless mass publishing directly via Pinterest's bulk uploader to
     3. `Pinterest board` (Routed to a targeted `Health & Longevity` board)
     4. `Thumbnail` (Left blank per image format requirement)
     5. `Description` (Crafted with rich, SEO-optimized explanations and long-tail keywords)
-    6. `Link` (Outbound destination link. Note: This is optional and there is no strict need for a link URL if you just want to publish the infographic natively)
+    6. `Link` (Left explicitly blank per current requirements)
     7. `Publish date`
     8. `Keywords` (Appended keyword arrays to boost search performance)
 
@@ -57,9 +57,9 @@ To enable frictionless mass publishing directly via Pinterest's bulk uploader to
 
 When generating or designing images for Pinterest, especially for infographic formats like the ones created in this project, it's critical to follow optimal sizing recommendations so the pins render correctly in users' feeds without essential information being cropped off.
 
-**Recommended Dimensions for Long Vertical Pins:**
+**Recommended Dimensions for Pins:**
 
-- **Standard Vertical (2:3 Aspect Ratio):** `1000 x 1500 pixels`. This is the most optimal and common ratio for Pinterest algorithms.
+- **Standard Pins (2:3 Aspect Ratio):** `1000 x 1500 pixels`. This is the ideal and most strongly recommended ratio for Pinterest algorithms right now. Always aim for this size as the standard baseline to ensure no chance of truncation.
 - **Long Vertical / "Giraffe" Pins (1:2.1 Aspect Ratio):** `1000 x 2100 pixels`. This is considered a great size for infographics, recipes, and checklists as it commands extra scrolling screen real estate.
 - *Warning!* Pins taller than a `1:2.1` ratio (e.g., taller than 2100px) risk getting "truncated" (cropped off) right in the main Pinterest feed, requiring the user to tap them to see the bottom. This hurts click-through performance.
 
