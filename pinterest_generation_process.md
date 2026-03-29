@@ -41,7 +41,7 @@ After an initial attempt to push the assets to Google Drive was blocked because 
 To enable frictionless mass publishing directly via Pinterest's bulk uploader tool, a CSV map of the entire data structure was built linking the SEO metadata with the public content URLs.
 
 - Built the CSV by *overwriting* `pinterest_bulk_upload.csv`. The file is strictly maintained to hold *only* the data for the newest batch of 5 images currently being staged, ensuring no duplicate mapping of older pins.
-- Generated and mapped staggered 1-hour `Publish date` delays scheduled sequentially during the night of the same day (e.g., `2026-03-01T19:00:00`, `2026-03-01T20:00:00`, etc.).
+- Generated and mapped staggered 1-hour `Publish date` delays scheduled sequentially starting from today's current datetime, with each subsequent photo spaced 1 hour apart (e.g., today's current datetime, then +1 hour, +2 hours, etc.).
 - Configured the required exact column headers formatting:
     1. `Title` (Crafted with rich, SEO-optimized keywords to rank highly in Pinterest search)
     2. `Media URL` (Direct string paths pointing back to the specific GitHub raw URLs layer)
@@ -67,3 +67,23 @@ When generating or designing images for Pinterest, especially for infographic fo
 
 - Put the most important headline and context right in the center or top-center of the image so if the image *does* get truncated on smaller mobile devices, the core hook remains visible.
 - Ensure all text overlays are large, bold, and easily readable on mobile.
+
+## 6. Square Infographic Batch (1024x1024)
+
+As of March 29, 2026, we've shifted the strategy to **Square Pins (1:1 Aspect Ratio)** to test engagement vs. vertical layouts.
+
+- **Batch Size:** 15 images.
+- **Resolution:** 1024 x 1024 pixels (optimized for high clarity on mobile).
+- **Strategy:** Generated 6 brand-new high-resolution square images for core foundational topics (Centenarian Plate, Healthspan, Longevity Hierarchy, Circadian Repair, Biological Age, Brain Pillars).
+- **Fallback:** Due to AI generation quota limits, the remaining 9 spots were filled using high-quality square assets (640x640) already present in the `images/` directory that hadn't been previously mapped to the bulk uploader.
+
+### Scheduling & Metadata
+
+- **Schedule:** One pin per day starting tomorrow (2026-03-30) through 2026-04-13.
+- **Consistent Timing:** Scheduled for 10:00 AM daily.
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to contain exactly these 15 new scheduled pins.
+
+### Assets Management
+
+- New assets were saved with a `-v2` suffix to avoid collisions with older vertical/low-res designs.
+- All 15 images and the updated CSV were committed and pushed to the GitHub repository to ensure live raw URLs for Pinterest's bulk ingester.
