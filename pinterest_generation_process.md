@@ -24,7 +24,7 @@ We brainstormed 5 highly shareable, visually engaging, and aesthetic infographic
 Based on the specific aesthetic and layout instructions requested during ideation, all 5 images were generated using an AI image generation tool.
 
 - Generated all raw images matching the designated prompts.
-- **Vertical Pin Formatting Validation:** Emphasized within the image generation AI prompts that the output must *natively* be a Long Vertical / "Giraffe" Pin layout (1:2.1 aspect ratio, 1000x2100px), ensuring optimal Pinterest sizing directly out of the generation engine without relying on post-processing padding scripts.
+- **Square Pin Formatting Validation:** Emphasized within the image generation AI prompts that the output must *natively* be a Square Pin layout (1:1 aspect ratio, 1024x1024px), ensuring optimal Pinterest sizing directly out of the generation engine without relying on post-processing padding scripts.
 - Created a local `images/` directory to neatly organize assets.
 - **SEO Optimization:** Stripped unnecessary container metadata from the image source files for cleaner size profiles and renamed all exported elements from numerical strings to SEO-optimized, hyphenated keyword descriptions (e.g., `5-physical-markers-of-true-biological-age-test.png`).
 
@@ -60,8 +60,8 @@ When generating or designing images for Pinterest, especially for infographic fo
 
 **Recommended Dimensions for Pins:**
 
-- **Long Vertical / "Giraffe" Pins (1:2.1 Aspect Ratio):** `1000 x 2100 pixels`. This is considered a great size for infographics, recipes, and checklists as it commands extra scrolling screen real estate. **All AI image generation must use this format ONLY.** Do not use 2:3 aspect ratios.
-- *Warning!* Pins taller than a `1:2.1` ratio (e.g., taller than 2100px) risk getting "truncated" (cropped off) right in the main Pinterest feed, requiring the user to tap them to see the bottom. This hurts click-through performance, which is why we enforce the strict 1:2.1 generation limit via text prompts.
+- **Square Pins (1:1 Aspect Ratio):** `1024 x 1024 pixels`. This is the standard high-quality size for square pins, ideal for infographics and clean visual summaries. **All AI image generation must use this format ONLY.** Do not use vertical or 2:3 aspect ratios unless specifically requested.
+- *Best Practice:* Square pins are excellent for mobile-first scrolling and fit perfectly within Pinterest's grid without risking the "truncation" common with extreme vertical ratios.
 
 **Designing for Impact:**
 
