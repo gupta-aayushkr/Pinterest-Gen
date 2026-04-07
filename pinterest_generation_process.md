@@ -1,4 +1,4 @@
-# Pinterest Infographic Generation Process
+ha# Pinterest Infographic Generation Process
 
 This document serves as a complete log of the entire automated workflow executed to generate, optimize, and stage a series of Pinterest infographic pins surrounding the themes of health and longevity.
 
@@ -87,3 +87,21 @@ As of March 29, 2026, we've shifted the strategy to **Square Pins (1:1 Aspect Ra
 
 - New assets were saved with a `-v2` suffix to avoid collisions with older vertical/low-res designs.
 - All 15 images and the updated CSV were committed and pushed to the GitHub repository to ensure live raw URLs for Pinterest's bulk ingester.
+
+## 7. Square Infographic Batch 2 (1024x1024) - April 7, 2026
+
+- **Batch Size:** 10 images.
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 10 new square images focusing on deeper mechanistic topics like NAD+, photobiomodulation, biological clocks, and the FMD diet.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from today's current datetime (catering to optimal UK/US traffic times).
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these newest 10 images, ensuring no older duplicate pins are scheduled.
+- All new generated assets and the revised CSV were committed and pushed to the GitHub repository to ensure live raw URLs for Pinterest's bulk ingester.
+
+## 8. Square Infographic Batch 3 (1024x1024) - April 7, 2026 (Continued)
+
+- **Batch Size:** 5 images.
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 5 new square images focusing on deeper structural and physiological systems: Hydration Hierarchy, Breathwork Matrix, Nutritional Deficiencies, Glymphatic System, and Fascia.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting 1 hour from generation time.
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten with exclusively the 5 newest images to prevent duplicate pinning.
+- All new image assets were moved to the `images/` directory with SEO-optimized filenames, and the CSV was committed and pushed to GitHub.
