@@ -1,4 +1,4 @@
-ha# Pinterest Infographic Generation Process
+# Pinterest Infographic Generation Process
 
 This document serves as a complete log of the entire automated workflow executed to generate, optimize, and stage a series of Pinterest infographic pins surrounding the themes of health and longevity.
 
@@ -105,3 +105,21 @@ As of March 29, 2026, we've shifted the strategy to **Square Pins (1:1 Aspect Ra
 - **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting 1 hour from generation time.
 - **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten with exclusively the 5 newest images to prevent duplicate pinning.
 - All new image assets were moved to the `images/` directory with SEO-optimized filenames, and the CSV was committed and pushed to GitHub.
+
+## 9. Square Infographic Batch 4 (1024x1024) - April 14, 2026
+
+- **Batch Size:** 10 images.
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 10 new square images focusing on synergistic nutrients (K2/D3), anthocyanins, mental health (Dopamine Detox), blood donation benefits, Vagus nerve mastering, Sirtuins, immunity shuttles (Quercetin/Zinc), metabolic pillars, circadian weight loss, and acoustic medicine.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 23:00 tonight (April 14) through tomorrow morning (April 15).
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these newest 10 images.
+- All new generated assets were moved to the `images/` directory with SEO-optimized filenames, and the CSV was updated.
+
+## 10. High Protein Snacks Ebook Batch (1024x1024) - May 17, 2026
+
+- **Batch Size:** 5 images.
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 5 new square images focusing specifically on high-protein snacks to drive sales for the digital ebook landing page: 5-min snacks, boring diet vs. smart snacks comparison, the high-protein snack pyramid hierarchy, plant-based protein snacks checklist, and the satiety vs. density protein snack matrix.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 11:00 AM today (May 17).
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 5 new images, and a live redirection Link column was configured pointing to `https://aayushnitya.com/products/high-protein-snacks` (linked to the Gumroad digital download checkout).
+- All new generated assets were moved to the `images/` directory with SEO-optimized filenames, and the CSV and process log were committed and pushed to GitHub.

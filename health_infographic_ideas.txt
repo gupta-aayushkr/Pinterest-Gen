@@ -241,3 +241,62 @@
 46. "Bone Mineral Density: Silent Longevity Pillar"
 47. "Post-Meal Walks: The Ultimate Blood Sugar Hack"
 48. "Neuroplasticity: Rewiring Your Brain Daily"
+49. "Vitamin K2 & D3: The Synergy for Bone & Heart Health"
+- Visual Concept: Two overlapping circles representing K2 and D3, showing how they work together to direct calcium to bones and away from arteries.
+- Key Elements: Bone density, arterial health, magnesium as a cofactor.
+
+50. "The Power of Anthocyanins: Why Purple Foods Boost Longevity"
+- Visual Concept: A vibrant display of blackberries, purple cabbage, and blueberries with glowing purple highlights.
+- Key Elements: Antioxidant capacity, cognitive health, DNA protection.
+
+51. "Dopamine Detox: Resetting Your Reward System for Focus"
+- Visual Concept: A brain graphic with a "reset" button, transitioning from "overstimulated" (red) to "calm" (blue).
+- Key Elements: Reduced screen time, cold exposure, nature walks, delayed gratification.
+
+52. "The Longevity Benefits of Regular Blood Donation"
+- Visual Concept: A simplified heart-and-blood system graphic showing the removal of excess iron (ferritin).
+- Key Elements: Reducing oxidative stress, heart health, metabolic boost.
+
+53. "Mastering the Vagus Nerve: Tapping Into Your Parasympathetic System"
+- Visual Concept: A stylized illustration of the vagus nerve running from brain to gut, glowing in a calm cyan light.
+- Key Elements: Deep breathing, humming, cold exposure, social connection.
+
+54. "The Science of Sirtuins: Activating Your Longevity Genes"
+- Visual Concept: A DNA helix with "Sirtuin" protein keys unlocking segments of the gene.
+- Key Elements: Resveratrol, fasting, heat exposure, exercise.
+
+55. "Quercetin & Zinc: The Viral Immunity Powerhouse"
+- Visual Concept: A cell membrane with Quercetin acting as a "shuttle" (ionophore) for Zinc to enter.
+- Key Elements: Immune system support, respiratory health, seasonal resilience.
+
+56. "The 5 Pillars of Metabolic Health"
+- Visual Concept: A pentagon or a 5-pillared temple showing the core metrics of a healthy metabolism.
+- Key Elements: Blood sugar stability, waist circumference, blood pressure, HDLs, triglycerides.
+
+57. "How to Optimize Your Circadian Rhythm for Weight Loss"
+- Visual Concept: A 24-hour clock showing optimal times for eating, exercising, and sleeping to maximize fat oxidation.
+- Key Elements: Time-restricted feeding, morning sun, no late-night snacks.
+
+58. "Acoustic Medicine: The Power of Solfeggio Frequencies"
+- Visual Concept: Sound waves (oscillations) resonating with different parts of the human body.
+- Key Elements: 432Hz for healing, 528Hz for DNA repair, parasympathetic activation.
+
+59. "5 High-Protein Snacks Under 5 Minutes"
+- Visual Concept: A clean, grid-based Pinterest infographic showcasing 5 ultra-quick high-protein snacks with visual elements.
+- Key Elements: Greek yogurt (20g protein), Cottage cheese (15g protein), Hard-boiled eggs (12g protein), Beef jerky (15g protein), Canned tuna (18g protein).
+
+60. "Boring Diet vs. Smart High-Protein Snacks"
+- Visual Concept: A vertical split comparison showing a bland "Boring Diet" (plain chicken & boiled eggs) on the left and a delicious, aesthetic "Smart Diet" (greek yogurt parfait, protein cookie dough, egg bites) on the right.
+- Key Elements: Contrasting dry/tedious proteins with delicious, high-quality, high-protein recipes from the ebook.
+
+61. "The High-Protein Snack Pyramid"
+- Visual Concept: A Maslow-style pyramid grouping snacks by preparation ease and strategy: Base (no-prep), Middle (quick-prep), and Top (weekly batch prep).
+- Key Elements: Greek yogurt & shakes at base, tuna & eggs in middle, protein muffins & egg bites at top.
+
+62. "5 Plant-Based High-Protein Snacks Checklist"
+- Visual Concept: A clean, modern checklist grid targeting plant-based athletes, featuring a soft organic green and vibrant orange aesthetic.
+- Key Elements: Edamame (17g protein), Roasted chickpeas (12g protein), Pumpkin seeds (9g protein), Tofu jerky (15g protein), Chia hemp pudding (10g protein).
+
+63. "The Ultimate High-Protein Snack Matrix"
+- Visual Concept: A 2x2 grid chart plotting snacks on Food Volume (X-axis) vs. Protein Density (Y-axis), with the top-right quadrant highlighted for the "Satiety Sweet Spot".
+- Key Elements: High-satiety foods (Greek yogurt, cottage cheese, shrimp), protein bars (high density, low volume), watermelon (high volume, low density).
