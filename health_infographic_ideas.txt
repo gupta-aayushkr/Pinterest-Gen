@@ -282,12 +282,12 @@
 - Key Elements: 432Hz for healing, 528Hz for DNA repair, parasympathetic activation.
 
 59. "5 High-Protein Snacks Under 5 Minutes"
-- Visual Concept: A clean, grid-based Pinterest infographic showcasing 5 ultra-quick high-protein snacks with visual elements.
+- Visual Concept: A clean, grid-based Pinterest infographic showcasing 5 ultra-quick high-protein snacks.
 - Key Elements: Greek yogurt (20g protein), Cottage cheese (15g protein), Hard-boiled eggs (12g protein), Beef jerky (15g protein), Canned tuna (18g protein).
 
 60. "Boring Diet vs. Smart High-Protein Snacks"
-- Visual Concept: A vertical split comparison showing a bland "Boring Diet" (plain chicken & boiled eggs) on the left and a delicious, aesthetic "Smart Diet" (greek yogurt parfait, protein cookie dough, egg bites) on the right.
-- Key Elements: Contrasting dry/tedious proteins with delicious, high-quality, high-protein recipes from the ebook.
+- Visual Concept: A vertical split comparison showing a bland "Boring Diet" on the left and a delicious "Smart Diet" on the right.
+- Key Elements: Contrasting dry/tedious proteins with delicious, high-quality, high-protein recipes.
 
 61. "The High-Protein Snack Pyramid"
 - Visual Concept: A Maslow-style pyramid grouping snacks by preparation ease and strategy: Base (no-prep), Middle (quick-prep), and Top (weekly batch prep).
@@ -298,5 +298,25 @@
 - Key Elements: Edamame (17g protein), Roasted chickpeas (12g protein), Pumpkin seeds (9g protein), Tofu jerky (15g protein), Chia hemp pudding (10g protein).
 
 63. "The Ultimate High-Protein Snack Matrix"
-- Visual Concept: A 2x2 grid chart plotting snacks on Food Volume (X-axis) vs. Protein Density (Y-axis), with the top-right quadrant highlighted for the "Satiety Sweet Spot".
+- Visual Concept: A 2x2 grid chart plotting snacks on Food Volume (X-axis) vs. Protein Density (Y-axis).
 - Key Elements: High-satiety foods (Greek yogurt, cottage cheese, shrimp), protein bars (high density, low volume), watermelon (high volume, low density).
+
+64. "The Midnight Muscle-Building Snack Guide"
+- Visual Concept: Nighttime themed with glowing blue and orange accents. Shows 4 high-casein protein snacks ideal for overnight repair.
+- Key Elements: Cottage Cheese Bowl, Greek Yogurt with Almonds, Casein Protein Pudding, Edamame.
+
+65. "4 High-Protein Dessert Alternatives"
+- Visual Concept: Delicious and healthy dessert swaps with warm glowing lighting, rich chocolate and berry colors.
+- Key Elements: Protein Mug Cake, Greek Yogurt Bark, Chocolate Protein Pudding, Protein Chia Pudding.
+
+66. "The 30-Gram Protein Snack Formula"
+- Visual Concept: A visual math equation layout: 'Base (20g)' + 'Booster (10g)' = '30g Protein'.
+- Key Elements: 1 cup cottage cheese + 2 tbsp hemp seeds, OR 1 cup Greek yogurt + 1 scoop collagen.
+
+67. "High-Protein Office Snacks (No Fridge Required)"
+- Visual Concept: A clean layout of 5 desk-friendly snacks on a professional dark grey background.
+- Key Elements: Beef Jerky, Roasted Edamame, Whey Protein Powder in a shaker, Tuna Pouches, Pumpkin Seeds.
+
+68. "Anatomy of a Perfect Protein Shake"
+- Visual Concept: A deconstructed glass blender cup with layered visual pointers.
+- Key Elements: Liquid Base, Protein Source, Healthy Fat, Fiber/Micronutrients.

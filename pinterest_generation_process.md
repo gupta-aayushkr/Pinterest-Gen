@@ -123,3 +123,12 @@ As of March 29, 2026, we've shifted the strategy to **Square Pins (1:1 Aspect Ra
 - **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 11:00 AM today (May 17).
 - **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 5 new images, and a live redirection Link column was configured pointing to `https://aayushnitya.com/products/high-protein-snacks` (linked to the Gumroad digital download checkout).
 - All new generated assets were moved to the `images/` directory with SEO-optimized filenames, and the CSV and process log were committed and pushed to GitHub.
+
+## 11. High Protein Snacks Educational Batch (1024x1024) - May 17, 2026 (Revised)
+
+- **Batch Size:** 10 images.
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 10 new square images focusing on high-protein snacks. This batch was explicitly designed to be **100% educational and non-promotional**. All mentions of ebooks, websites, and external links were removed from the titles, descriptions, and the CSV Link column to ensure maximum Pinterest approval rates and organic reach.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 11:00 AM today (May 17).
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 10 new images with the Link column left completely empty.
+- All new generated assets were moved to the `images/` directory with new SEO-optimized filenames, and the CSV and process log were committed and pushed to GitHub.
