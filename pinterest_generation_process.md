@@ -141,3 +141,12 @@ As of March 29, 2026, we've shifted the strategy to **Square Pins (1:1 Aspect Ra
 - **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 10:00 AM tomorrow (May 18).
 - **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 10 new images with the Link column left completely empty.
 - All new generated assets were moved to the `images/` directory with new SEO-optimized filenames, and the CSV and process log were committed and pushed to GitHub.
+
+## 13. Cortisol & Snacks Educational Batch (1024x1024) - May 17, 2026
+
+- **Batch Size:** 7 images (5 Cortisol, 2 High Protein Snacks). *Note: Due to AI image generation quota limits, only 7 of the intended 10 images were successfully generated.*
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 7 new square images focusing on cortisol management and high protein snacks. This batch follows the established 100% educational and non-promotional standard.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 10:00 AM on May 19.
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 7 new images with the Link column left completely empty.
+- All new generated assets were moved to the `images/` directory with new SEO-optimized filenames, and the CSV and process log were committed and pushed to GitHub.
