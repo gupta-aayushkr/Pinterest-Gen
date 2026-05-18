@@ -150,3 +150,21 @@ As of March 29, 2026, we've shifted the strategy to **Square Pins (1:1 Aspect Ra
 - **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 10:00 AM on May 19.
 - **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 7 new images with the Link column left completely empty.
 - All new generated assets were moved to the `images/` directory with new SEO-optimized filenames, and the CSV and process log were committed and pushed to GitHub.
+
+## 15. Protein Educational Batch (1024x1024) - May 18, 2026
+
+- **Batch Size:** 5 images.
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 5 new square images focusing on educational protein topics (Protein Pacing, Plant vs. Animal Protein, Satiety Effect, Hidden Sources, and Post-Workout Myth). This batch follows the established 100% educational and non-promotional standard.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 10:00 AM on May 20.
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 5 new images with the Link column left completely empty.
+- All new generated assets were moved to the `images/` directory with new SEO-optimized filenames, and the CSV and process log were committed and pushed to GitHub.
+
+## 14. Fallback Image Generation Protocol (Agent Instructions)
+
+To mitigate image generation quota limits encountered during batches (such as Batch 13), a localized fallback script (`generate_fallback_image.py`) has been implemented using the Gemini Imagen API. 
+
+**CRITICAL AGENT INSTRUCTION:** 
+- The AI Agent must **always** prioritize its native primary image generation capabilities (`generate_image` tool) for all image requests.
+- The `generate_fallback_image.py` script is strictly a **fallback**. The Agent should *only* invoke or instruct the user to invoke this script if and when the native LLM image generation quota is maxed out and returns an error. Do not use this as the primary method.
+- When fallback is necessary, the script uses the `GEMINI_API_KEY` securely stored in the `.env` file to generate the remaining required images.
