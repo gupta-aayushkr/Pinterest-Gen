@@ -169,6 +169,15 @@ As of March 29, 2026, we've shifted the strategy to **Square Pins (1:1 Aspect Ra
 - **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 5 new images with the Link column left completely empty.
 - All new generated assets were stored in the `images/` directory with SEO-optimized filenames, and the CSV was committed and pushed to GitHub.
 
+## 17. High Protein Recipes Educational Batch (1024x1024) - May 20, 2026
+
+- **Batch Size:** 10 images.
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 10 new square images focusing on delicious, high-protein recipes (Low-Carb Lasagna, 30g Protein Overnight Oats, 5-Min Blender Pancakes, Creamy Tuscan Chicken, 50g Meal Prep Bowl, Healthy Creamy Alfredo, 3-Ingredient Chocolate Mug Cake, Meal Prep Egg White Frittata, Giant Double-Chocolate Cookie, and High-Protein Salmon Salad). The batch was generated programmatically via the Gemini API using the cheaper, highly capable `imagen-4.0-fast-generate-001` model ($0.02/image) which specializes in high-quality embedded text rendering. This batch follows the established 100% educational and non-promotional standard.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 10:00 AM on May 24 (5 pins) and 10:00 AM on May 25 (5 pins).
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 10 new images with the Link column left completely empty.
+- All new generated assets were stored in the `images/` directory with SEO-optimized filenames, and the CSV was updated.
+
 ## 14. Fallback Image Generation Protocol (Agent Instructions)
 
 To mitigate image generation quota limits encountered during batches (such as Batch 13), a localized fallback script (`generate_fallback_image.py`) has been implemented using the Gemini Imagen API. 
