@@ -168,3 +168,12 @@ As of March 29, 2026, we've shifted the strategy to **Square Pins (1:1 Aspect Ra
 - **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 10:00 AM on May 21.
 - **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 5 new images with the Link column left completely empty.
 - All new generated assets were stored in the `images/` directory with SEO-optimized filenames, and the CSV was committed and pushed to GitHub.
+
+## 17. LLM Native Protein Educational Batch (1024x1024) - May 20, 2026
+
+- **Batch Size:** 5 images.
+- **Resolution:** 1024 x 1024 pixels (optimized for high clarity on mobile).
+- **Strategy:** Generated 5 new square images focusing on core educational protein topics (3 Pillars of Protein Quality, Optimal Protein Spacing, 5 Vegetarian Protein Powerhouses Checklist, Satiety Index, and Anabolic Window Myth). This batch was generated natively by the LLM using direct state-of-the-art vision generation tools without invoking external scripts or local programmatic API endpoints. This batch strictly adheres to the 100% educational and non-promotional standard.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 10:00 AM on May 24, 2026.
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 5 new images with the Link column left completely empty.
+- All new generated assets were stored in the `images/` directory with SEO-optimized filenames, and the CSV was committed and pushed to GitHub.
