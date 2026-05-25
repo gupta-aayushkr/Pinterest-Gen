@@ -40,17 +40,35 @@ After an initial attempt to push the assets to Google Drive was blocked because 
 
 To enable frictionless mass publishing directly via Pinterest's bulk uploader tool, a CSV map of the entire data structure was built linking the SEO metadata with the public content URLs.
 
-- Built the CSV by *overwriting* `pinterest_bulk_upload.csv`. The file is strictly maintained to hold *only* the data for the newest batch of 5 images currently being staged, ensuring no duplicate mapping of older pins.
-- Generated and mapped staggered 1-hour `Publish date` delays scheduled sequentially starting from today's current datetime, with each subsequent photo spaced 1 hour apart (e.g., today's current datetime, then +1 hour, +2 hours, etc.).
-- Configured the required exact column headers formatting:
-    1. `Title` (Crafted with rich, SEO-optimized keywords to rank highly in Pinterest search)
-    2. `Media URL` (Direct string paths pointing back to the specific GitHub raw URLs layer)
-    3. `Pinterest board` (Routed to a targeted `Health & Longevity` board)
-    4. `Thumbnail` (Left blank per image format requirement)
-    5. `Description` (Crafted with rich, SEO-optimized explanations and long-tail keywords)
-    6. `Link` (Left explicitly blank per current requirements)
-    7. `Publish date`
-    8. `Keywords` (Appended keyword arrays to boost search performance)
+- **Batch Size Limits:** Up to 200 image or video Pins can be uploaded simultaneously per batch using the desktop bulk uploader tool in a Pinterest Business account.
+- **CSV Generation Policy:** Built by *overwriting* `pinterest_bulk_upload.csv`. The file is strictly maintained to hold *only* the data for the newest batch of Pins currently being staged to prevent duplicate scheduling.
+- **Staggered Scheduling:** Staggered publish date delays are generated to space out Pins sequentially (e.g., daily or in 1-hour intervals), which prevents spam flags that arise from publishing large batches at once.
+
+### Official Pinterest Bulk Upload CSV Schema
+
+The uploader requires a `.csv` file saved in Comma Separated Values format with exactly the following 8 column headers:
+
+| Column Name | Requirement | Specifications & Limitations | Example |
+| :--- | :--- | :--- | :--- |
+| **`Title`** | Required | Maximum **100 characters**. Best optimized with descriptive, search-friendly keywords. | `Sweet potato hummus` |
+| **`Media URL`** | Required | Publicly accessible direct URL to the media file itself (must end in a standard extension: `.mp4` for videos, or `.png`, `.jpg`, `.jpeg` for images). | `https://example.com/video.mp4` |
+| **`Pinterest board`** | Required | The title of the board where content will be saved. To target specific board sections, append a slash followed by the section name (e.g. `Board Title/Section Title`). If the board or section doesn't exist, Pinterest will create it automatically. | `Summer eats/appetisers` |
+| **`Thumbnail`** | **Required for Video** | Specifying a video cover is **mandatory for Video Pins only**. It accepts three formats:<br>1. Timestamp in `mm:ss` format.<br>2. Number of seconds into the video (e.g., `62`).<br>3. Public direct URL to a static cover image (whose aspect ratio **must** match the video's aspect ratio).<br><br>*Note: Leave this column completely blank for standard image uploads.* | `01:02` or `62` or `https://example.com/cover.jpg` |
+| **`Description`** | Optional | Maximum **500 characters** of rich, SEO-optimized copy using long-tail keywords. | `The best sweet potato hummus recipe you'll find!` |
+| **`Link`** | Optional | The destination URL where users are redirected when they click the Pin. | `https://example.com/sweet-potato-hummus` |
+| **`Publish date`** | Optional | Scheduled publication date/time in the future. To publish at a specific time, format as standard **ISO 8601 UTC** time. If left empty, Pins publish immediately upon upload approval. | `2023-12-17` or `2023-12-17T08:00:00` |
+| **`Keywords`** | Optional | A comma-separated list of relevant search keywords. | `healthy, appetisers, hummus, summer` |
+
+### Critical Formatting & Escaping Rules
+
+> [!WARNING]
+> **Field Splitting on Commas:** Standard CSV parser engines separate columns by commas. Any field value containing commas—such as list-based **Titles** (e.g., `"Chronotypes Explained: Lion, Bear, Wolf, or Dolphin?"`), descriptive **Descriptions**, or **Keywords**—**MUST be enclosed in double quotes (`"..."`)**. Failure to quote these fields shifts subsequent data columns to the right, misaligning Media URLs, board names, and schedule times, causing bulk upload failures.
+
+> [!CAUTION]
+> **Promotional Text Filters (Rejections & Spam Blocks):**
+> Pinterest's automated bulk uploader scans Pin metadata (Titles and Descriptions) for commercial and repetitive copy. Using sales-driven terms like **`"shop"`**, **`"purchase"`**, **`"shop now"`**, **`"tap to shop"`**, **`"ebook"`**, or **`"bundle"`** in your uploader text will frequently trigger automated spam filters, leading to silent publishing failures or account flags.
+> 
+> *Best Practice:* To ensure maximum uploader approval rates and organic distribution, always write Titles and Descriptions as **100% value-first, educational guides**. Remove all commercial keywords, digital product jargon, and promotional calls-to-action from the text fields. Direct product checkout and landing page URLs should reside **exclusively in the uploader's `Link` column**, allowing you to drive sales smoothly when users click the Pin.
 
 *Outputs:* Finalized and generated the `pinterest_bulk_upload.csv` directly into the project directory and synced the updated version to the remote GitHub repository.
 
@@ -177,3 +195,26 @@ As of March 29, 2026, we've shifted the strategy to **Square Pins (1:1 Aspect Ra
 - **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 10:00 AM on May 24, 2026.
 - **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 5 new images with the Link column left completely empty.
 - All new generated assets were stored in the `images/` directory with SEO-optimized filenames, and the CSV was committed and pushed to GitHub.
+
+## 18. The Standard Daily 10-Pin Bulk Generation Pattern (Workflow Guideline)
+
+To maintain a healthy balance between user monetization and Pinterest organic feed performance, all future daily bulk uploads of 10 Pins must adhere to a strict **50/50 division**:
+
+- **5 Promotional Pins:** Exactly one Pin for each of the 5 active digital products. These Pins **must** contain high-value, benefit-oriented visuals and copy, and include the exact product landing page URL in the `Link` column:
+  1. **Weight Loss Tracker Journal** (`https://aayushnitya.com/products/weight-loss-tracker-journal`)
+  2. **Ultimate Fitness Planner** (`https://aayushnitya.com/products/ultimate-fitness-planner`)
+  3. **High Protein Snacks Ebook** (`https://aayushnitya.com/products/high-protein-snacks`)
+  4. **The Cortisol Project** (`https://aayushnitya.com/products/the-cortisol-project`)
+  5. **Total Body Transformation Bundle** (`https://aayushnitya.com/products/total-body-transformation-bundle`)
+- **5 Educational Pins:** Covers general health, nutrition, sleep, and longevity topics. These Pins must be 100% educational and non-promotional. To optimize feed visibility, the `Link` column **must** be left blank.
+- **Scheduling standard:** Stagger all 10 Pins sequentially by 1 hour starting from today's current datetime in UTC (e.g. today's date T18:00, T19:00, etc.).
+
+## 19. Bulk Product & Educational Staging Batch (1024x1024) - May 25, 2026
+
+- **Batch Size:** 10 images (5 Promotional, 5 Educational).
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 5 new promotional square infographics for each of the 5 products, and 5 educational health square infographics (3 new sleep/longevity/brain visual assets, and 2 high-quality local fallbacks due to API quota limitations).
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 6:00 PM today (May 25).
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 10 new scheduled Pins, with product landing URLs assigned to the 5 promotional Pins and blank links for the educational ones.
+- All new generated assets were stored in the `images/` directory, and the CSV was synced to remote GitHub.
+
