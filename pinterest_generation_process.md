@@ -70,6 +70,13 @@ The uploader requires a `.csv` file saved in Comma Separated Values format with 
 > 
 > *Best Practice:* To ensure maximum uploader approval rates and organic distribution, always write Titles and Descriptions as **100% value-first, educational guides**. Remove all commercial keywords, digital product jargon, and promotional calls-to-action from the text fields. Direct product checkout and landing page URLs should reside **exclusively in the uploader's `Link` column**, allowing you to drive sales smoothly when users click the Pin.
 
+> [!IMPORTANT]
+> **Active Remote Staging (The 404 Ingestion Rule):**
+> Pinterest's bulk uploader processes uploader spreadsheets asynchronously by sending a backend web scraper to fetch the visual assets from the exact URLs listed in the `Media URL` column.
+> * If the staging CSV is uploaded to Pinterest **before** the newly generated image files are successfully committed and pushed to the remote repository, the ingester's download request will fail (HTTP 404). This will instantly reject all rows with the generic uploader failure: **`"Upload didn't work"`**.
+> * **macOS iCloud Sync Lock Troubleshooting:** Because this project directory is located within macOS's iCloud Drive (`Mobile Documents/com~apple~CloudDocs/`), active background sync processes frequently lock Git database index files, resulting in write timeout errors (`fatal: sha1 file ... index.lock write error: Operation timed out`). If this occurs, remove the lock file using `rm -f .git/index.lock` and retry the push. Always verify the raw GitHub URLs return a successful `200 OK` status before submitting your CSV file to Pinterest.
+
+
 *Outputs:* Finalized and generated the `pinterest_bulk_upload.csv` directly into the project directory and synced the updated version to the remote GitHub repository.
 
 ## 5. Pinterest Image Size & Visual Best Practices
