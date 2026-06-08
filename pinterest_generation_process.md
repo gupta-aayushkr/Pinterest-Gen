@@ -26,7 +26,8 @@ Based on the specific aesthetic and layout instructions requested during ideatio
 - Generated all raw images matching the designated prompts.
 - **Square Pin Formatting Validation:** Emphasized within the image generation AI prompts that the output must *natively* be a Square Pin layout (1:1 aspect ratio, 1024x1024px), ensuring optimal Pinterest sizing directly out of the generation engine without relying on post-processing padding scripts.
 - Created a local `images/` directory to neatly organize assets.
-- **SEO Optimization:** Stripped unnecessary container metadata from the image source files for cleaner size profiles and renamed all exported elements from numerical strings to SEO-optimized, hyphenated keyword descriptions (e.g., `5-physical-markers-of-true-biological-age-test.png`).
+- **SEO Optimization & AI Metadata Stripping:** Renamed all exported elements from numerical strings to SEO-optimized, hyphenated keyword descriptions (e.g., `5-physical-markers-of-true-biological-age.png`).
+- **CRITICAL C2PA STRIPPING:** AI image generators automatically embed hidden C2PA (Coalition for Content Provenance and Authenticity) metadata signatures and EXIF tags within the image streams. Pinterest scans these tags and strictly penalizes or flags the content as "AI-modified". **You MUST actively strip all metadata before staging the images.** On macOS, re-encode the images to raw PNGs using the `sips` processor (e.g., `for img in images/*.png; do sips -s format png "$img" --out "${img}.temp" > /dev/null && mv "${img}.temp" "$img"; done`) to completely wipe the AI footprints.
 
 ## 3. Remote Hosting Strategy (Git Implementation)
 
