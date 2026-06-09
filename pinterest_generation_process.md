@@ -217,6 +217,15 @@ To maintain a healthy balance between user monetization and Pinterest organic fe
 - **5 Educational Pins:** Covers general health, nutrition, sleep, and longevity topics. These Pins must be 100% educational and non-promotional. To optimize feed visibility, the `Link` column **must** be left blank.
 - **Scheduling standard:** Stagger all 10 Pins sequentially by 1 hour starting from today's current datetime in UTC (e.g. today's date T18:00, T19:00, etc.).
 
+### Standard Agent Execution Checklist:
+1. **Generate Images:** Create the 10x 1024x1024 square images natively or locally.
+2. **Strip Metadata:** Run `sips -s format png "$img" --out "${img}.temp" && mv "${img}.temp" "$img"` on all images to remove C2PA footprints.
+3. **Stage Images:** Move to `images/` directory with SEO-friendly names.
+4. **Git Push Images:** You MUST commit and push the newly generated images to the GitHub remote repository FIRST.
+5. **Create CSV Links:** Once the images are successfully pushed and their raw.githubusercontent URLs are live, populate the `pinterest_bulk_upload.csv`.
+6. **Git Push CSV & Logs:** Commit and push the updated CSV and markdown logs.
+7. **Upload to Pinterest:** Finally, the CSV can be safely submitted to Pinterest's bulk uploader tool.
+
 ## 19. Bulk Product & Educational Staging Batch (1024x1024) - May 25, 2026
 
 - **Batch Size:** 10 images (5 Promotional, 5 Educational).
