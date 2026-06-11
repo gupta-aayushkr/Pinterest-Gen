@@ -282,3 +282,12 @@ To maintain a healthy balance between user monetization and Pinterest organic fe
 - **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 4:00 AM today (June 10 UTC).
 - **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 10 new scheduled Pins with blank links.
 - All new generated assets were stored in the `images/` directory with clean, hyphenated filenames. The files have been committed locally but require manual push due to GitHub authentication.
+
+## 25. Fascia & Gut Immunity Educational Batch (1024x1024) - June 11, 2026
+
+- **Batch Size:** 10 images.
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 10 new square images exploring the intersection of fascia, connective tissue, and gut immunity/digestion. We focused heavily on the microbiome, vagus nerve, and tissue repair concepts. Maintained a clean, modern aesthetic with a consistent calming color palette matching previous high-performing longevity pins. All old images were removed. All metadata cleanly stripped using `sips`.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 10:00 AM today (June 11 UTC).
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 10 new scheduled Pins with blank links.
+- All new generated assets were stored in the `images/` directory with clean, hyphenated filenames. The files have been committed locally but require manual push due to GitHub authentication.
