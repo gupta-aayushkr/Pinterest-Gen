@@ -292,3 +292,12 @@ To maintain a healthy balance between user monetization and Pinterest organic fe
 - **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 10:00 AM today (June 11 UTC).
 - **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 10 new scheduled Pins with blank links.
 - All new generated assets were stored in the `images/` directory with clean, hyphenated filenames. The files have been committed locally but require manual push due to GitHub authentication.
+
+## 26. Educational Batch (1024x1024) - June 12, 2026
+
+- **Batch Size:** 10 images.
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 10 new square images focusing on educational health topics (80/20 Rule, Sugar & Brain Aging, Morning Sunlight, Sleep & Immunity, Walking for Digestion, Skin Longevity, Brain Fog, Science of Stretching, Mindful Eating, Bone Health). All metadata stripped cleanly using `sips`.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 10:00 AM today (June 12 UTC).
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 10 new scheduled Pins with blank links.
+- All new generated assets were stored in the `images/` directory with clean, hyphenated filenames. The files and CSV have been committed and pushed to GitHub.
