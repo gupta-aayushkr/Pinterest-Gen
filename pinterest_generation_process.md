@@ -310,3 +310,12 @@ To maintain a healthy balance between user monetization and Pinterest organic fe
 - **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 05:00 AM today (June 13 UTC).
 - **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 10 new scheduled Pins with blank links.
 - All new generated assets were stored in the `images/` directory with clean, hyphenated filenames. The files and CSV have been committed and pushed to GitHub.
+
+## 28. Educational Batch (1024x1024) - June 14, 2026
+
+- **Batch Size:** 10 images.
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 10 new square images focusing on educational health topics (Sleep Cycles, Gut-Brain Axis, Vitamin D3 & K2 Synergy, Zone 5 Cardio, Circadian Meal Timing, Chronic Stress, Adaptogens for Adrenal Fatigue, Dietary Fiber, BDNF Boosting, and Science of Hydration). All metadata stripped cleanly using `sips`.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 05:00 AM today (June 14 UTC).
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 10 new scheduled Pins with blank links.
+- All new generated assets were stored in the `images/` directory with clean, hyphenated filenames. The files and CSV have been committed and pushed to GitHub.
