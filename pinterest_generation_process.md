@@ -337,3 +337,12 @@ To maintain a healthy balance between user monetization and Pinterest organic fe
 - **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 04:00 AM today (June 16 UTC).
 - **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 5 new scheduled Pins with blank links.
 - All new generated assets were stored in the `images/` directory with clean, hyphenated filenames. The files and CSV have been committed and pushed to GitHub.
+
+## 31. Educational Batch (1024x1024) - June 19, 2026
+
+- **Batch Size:** 5 images.
+- **Resolution:** 1024 x 1024 pixels.
+- **Strategy:** Generated 5 new square images focusing on educational health topics (Ashwagandha Benefits, Circadian Rhythm, Gut-Brain Connection, Magnesium Glycinate, Science of Cold Plunges). All old images removed. Metadata stripped cleanly using `sips`.
+- **Schedule:** Scheduled sequentially with a 1-hour staggered delay starting from 04:00 AM today (June 19 UTC).
+- **CSV Update:** The `pinterest_bulk_upload.csv` was overwritten to exclusively contain these 5 new scheduled Pins with blank links.
+- All new generated assets were stored in the `images/` directory with clean, hyphenated filenames. The files and CSV have been committed and pushed to GitHub.
